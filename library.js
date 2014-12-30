@@ -37,7 +37,7 @@ Emailer.send = function(data) {
     server.sendContent(data.from,
          data.to,
          data.subject,
-         'text',
+         'html',
          data.plaintext
          );
 
