@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-emailer-mailjet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An emailer plugin for NodeBB using Mailjet as a third party service",
   "main": "index.js",
   "repository": {
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/pichalite/nodebb-plugin-emailer-mailjet",
   "dependencies": {
     "path": "~0.4.9",
-    "mailjet-sendemail": "~1.1.3"
+    "mailjet-sendemail": "~1.1.4"
   },
   "nbbpm": {
     "compatibility": "^0.6.0"
