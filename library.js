@@ -38,7 +38,7 @@ Emailer.send = function(data) {
          data.to,
          data.subject,
          'html',
-         data.plaintext
+         data.html
          );
 
 };
