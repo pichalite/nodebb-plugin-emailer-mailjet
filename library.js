@@ -29,18 +29,18 @@ Emailer.init = function(params, callback) {
 	callback();
 };
 
-Emailer.send = function(data) {
+Emailer.send = function(data, callback) {
 	if (!server) {
-		return winston.error('[emailer.mailjet] Mailjet is not set up properly!')
+		winston.error('[emailer.mailjet] Mailjet is not set up properly!')
+		return callback(null, data);
 	}
 
     server.sendContent(data.from,
          data.to,
          data.subject,
          'html',
-         data.html
-         );
-
+         data.html);
+    callback(null, data);
 };
 
 Emailer.admin = {
