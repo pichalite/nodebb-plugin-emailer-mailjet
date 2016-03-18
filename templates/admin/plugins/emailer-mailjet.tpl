@@ -2,18 +2,12 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<blockquote>
-			<p>
-				Mailjet is a programmable email platform. It allows your application to become a fully featured email server. Send, receive and track messages with ease.<br /><br />
-			</p>
-			
-		</blockquote>
 		<p>
 			To get started:
 		</p>
 		<ol>
 			<li>
-				Register for an account on <a href="https://www.mailjet.com/signup">https://www.mailjet.com/signup</a>. Mailjet offers a free tier with up to 6,000 free emails monthly.
+				Register for an account on <a href="https://app.mailjet.com/signup" target="_blank">https://app.mailjet.com/signup</a>. Mailjet offers a free tier with up to 6,000 free emails monthly.
 			</li>
 			<li>
 				Paste your API key and SECRET key into the fields below, hit save, and restart your NodeBB
@@ -48,7 +42,7 @@
 <script type="text/javascript">
 	require(['settings'], function(Settings) {
 		Settings.load('mailjet', $('.emailer-settings'));
-
+	
 		$('#save').on('click', function() {
 			Settings.save('mailjet', $('.emailer-settings'), function() {
 				app.alert({
