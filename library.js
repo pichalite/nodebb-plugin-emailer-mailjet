@@ -1,5 +1,5 @@
-var winston = module.parent.require('winston');
-var Meta = module.parent.require('./meta');
+var winston = require.main.require('winston');
+var Meta = require.main.require('./src/meta');
 
 var Emailer = {};
 var Mailjet = require('node-mailjet');
