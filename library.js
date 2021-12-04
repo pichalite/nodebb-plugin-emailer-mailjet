@@ -39,7 +39,10 @@ Emailer.send = function(data, callback) {
 		'Html-part': data.html,
 		'Recipients': [{
 			'Email': data.to
-		}]
+		}],
+		'Headers': {
+			'Reply-To': data.replyTo
+		}
 	};
 
 	sendEmail
